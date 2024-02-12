@@ -1,0 +1,10 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('../src/css/nucleo-icons.css');
+@import url('../src/css/nucleo-svg.css');
+@import url('https://kit.fontawesome.com/42d5adcbca.js');
+@import url('../src/css/nucleo-svg.css');
+@import url('../src/css/argon-dashboard.min.css');
