@@ -1,12 +1,12 @@
 <template>
-      <div
-            class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
+
+      <div class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
             id="sidenav-main">
             <div class="sidenav-header">
                 <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
                     aria-hidden="true" id="iconSidenav"></i>
                 <a class="navbar-brand m-0"
-                    href=" https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/default.html "
+                    href=" "
                     target="_blank">
                     <img src="../../../src/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
                     <span class="ms-1 font-weight-bold">Hotel Management</span>
@@ -26,12 +26,9 @@
                         </a>
                         <div class="collapse  show " id="dashboardsExamples">
                             <ul class="nav ms-4">
-                                <li class="nav-item ">
-                                    <a class="nav-link " href="../../pages/dashboards/landing.html">
-                                        <span class="sidenav-mini-icon"></span>
-                                        <span class="sidenav-normal"> Hotel </span>
-                                    </a>
-                                </li>
+
+                                <Link aria-current="page" class="nav-link active" href="/hotel">Hotel
+                            </Link>
 
                             </ul>
                         </div>
@@ -52,25 +49,25 @@
                         <div class="collapse " id="applicationsExamples">
                             <ul class="nav ms-4">
                                 <li class="nav-item ">
-                                    <a class="nav-link " href="../../pages/applications/kanban.html">
+                                    <a class="nav-link " href="">
                                         <span class="sidenav-mini-icon"> </span>
                                         <span class="sidenav-normal"> Resorts </span>
                                     </a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link " href="../../pages/applications/wizard.html">
+                                    <a class="nav-link " href="">
                                         <span class="sidenav-mini-icon"> </span>
                                         <span class="sidenav-normal"> Heritage hotels </span>
                                     </a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link " href="../../pages/applications/datatables.html">
+                                    <a class="nav-link " href="">
                                         <span class="sidenav-mini-icon"></span>
                                         <span class="sidenav-normal"> Casino Hotels</span>
                                     </a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link " href="../../pages/applications/calendar.html">
+                                    <a class="nav-link " href="">
                                         <span class="sidenav-mini-icon"></span>
                                         <span class="sidenav-normal"> Motels </span>
                                     </a>
@@ -81,4 +78,14 @@
                 </ul>
             </div>
         </div>
+
 </template>
+<script>
+import { Link } from '@inertiajs/vue3';
+
+export default {
+  components: {
+    Link,
+  },
+}
+</script>

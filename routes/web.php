@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HotelController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -18,5 +19,12 @@ use Inertia\Inertia;
 */
 
 Route::get('/',[HomeController::class,'index']);
+
+// Route::get('/hotel',[HotelController::class,'index']);
+
+
+Route::get('/hotel',[HotelController::class,'index'])->name('hotel');
+
+
 
 require __DIR__.'/auth.php';
